@@ -4,7 +4,7 @@ This repo contains a demo app (Hashicat) built from three Terraform modules: `ne
 
 - [Networking](./networking/): creates the necessary resources for connecting the different components: a VNET, two subnets (one for the VMs and one for the Application Gateway). Additionally, this module also creates the resource group used by all the other resources.
 
-Two security groups are also created: one to establish the connection between the two subnets and another to allow SSH traffic to the VM (for configuration and management).
+    Two security groups are also created: one to establish the connection between the two subnets and another to allow SSH traffic to the VM (for configuration and management).
 
 - [Compute](./compute/): creates a VM with a network interface and the provisioner to install and start the `Hashicat` web app.
 
